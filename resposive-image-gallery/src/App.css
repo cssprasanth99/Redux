@@ -1,22 +1,41 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+  --mainColor: #29335C;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #DB2B39;
+  --textColor:#eee;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto",sans-serif;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.anchor{
+  margin: 0 2px;
+  color: var(--textColor);
+  text-decoration: none;
 }
+
+.anchor:hover{
+  color: var(--secondaryColor);
+}
+
 
 @keyframes logo-spin {
   from {
